@@ -69,7 +69,7 @@ p{line-height:1.72;color:var(--text)}
 .call-float:hover{transform:scale(1.12);box-shadow:0 8px 32px rgba(37,99,235,.65)}
 
 /* ── NAV ── */
-#navbar{position:fixed;top:0;left:0;right:0;width:100%;z-index:900;background:rgba(8,11,18,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);will-change:transform}
+#navbar{position:relative;z-index:900;background:rgba(8,11,18,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);transition:background var(--tr)}
 .nav-top{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 24px;border-bottom:1px solid rgba(255,255,255,.07)}
 .nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0;text-decoration:none}
 .logo-icon{width:42px;height:42px;background:var(--blue);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
@@ -114,9 +114,8 @@ p{line-height:1.72;color:var(--text)}
    HERO
 ══════════════════════════════════════════ */
 #hero{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;overflow:hidden;z-index:0}
-.hero-bg{position:absolute;inset:0;overflow:hidden}
-.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,8,16,.92) 0%,rgba(6,8,16,.72) 50%,rgba(6,8,16,.35) 100%);z-index:1}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85') center/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,8,16,.97) 0%,rgba(6,8,16,.82) 55%,rgba(6,8,16,.4) 100%)}
 .hero-content{position:relative;z-index:2;padding:120px 0 80px;max-width:680px}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(37,99,235,.18);border:1px solid rgba(37,99,235,.4);color:var(--blue2);padding:7px 18px;border-radius:50px;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:26px}
 .hero-badge .dot{width:7px;height:7px;background:var(--blue2);border-radius:50%;animation:pulse 1.8s ease-in-out infinite}
@@ -138,7 +137,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    SERVICE IMAGE PANELS
 ══════════════════════════════════════════ */
-#svc-strip{display:grid;grid-template-columns:repeat(3,1fr);height:320px;position:relative;z-index:10}
+#svc-strip{display:grid;grid-template-columns:repeat(3,1fr);height:320px;position:relative;z-index:2}
 .svc-panel{position:relative;overflow:hidden;cursor:pointer;text-decoration:none;display:block}
 .svc-panel-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s cubic-bezier(.4,0,.2,1)}
 .svc-panel:hover .svc-panel-bg{transform:scale(1.07)}
@@ -152,7 +151,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    STATS BAR
 ══════════════════════════════════════════ */
-#stats{background:var(--blue3);padding:56px 0;position:relative;z-index:10}
+#stats{background:var(--blue3);padding:56px 0;position:relative;z-index:2}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
 .stat-item{text-align:center;padding:16px;border-right:1px solid rgba(255,255,255,.15)}
 .stat-item:last-child{border-right:none}
@@ -162,7 +161,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    FEATURED SERVICES
 ══════════════════════════════════════════ */
-#services{background:var(--bg0);position:relative;z-index:10}
+#services{background:var(--bg0);position:relative;z-index:2}
 .services-header{text-align:center;max-width:580px;margin:0 auto 60px}
 .services-header h2{color:#fff;margin-bottom:14px}
 .services-header p{color:var(--muted)}
@@ -185,11 +184,11 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    WHAT'S INCLUDED CTA
 ══════════════════════════════════════════ */
-#included{display:grid;grid-template-columns:1fr 1fr;min-height:580px;position:relative;z-index:10}
+#included{display:grid;grid-template-columns:1fr 1fr;min-height:580px;position:relative;z-index:2}
 .included-img{position:relative;overflow:hidden}
 .included-img img{width:100%;height:100%;object-fit:cover;display:block}
 .included-content{position:relative;overflow:hidden;background:#111;display:flex;align-items:center}
-.included-content-bg{position:absolute;inset:0;background:url('images/lbl-pressure-washing-02.jpg') center/cover no-repeat;opacity:.08}
+.included-content-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&q=60') center/cover no-repeat;opacity:.08}
 .included-inner{position:relative;z-index:1;padding:72px 60px}
 .included-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
 .included-inner h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.1;margin-bottom:18px}
@@ -214,7 +213,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    PHOTO GRID 4×3
 ══════════════════════════════════════════ */
-#photo-grid{background:var(--bg0);padding-top:80px;position:relative;z-index:10}
+#photo-grid{background:var(--bg0);padding-top:80px;position:relative;z-index:2}
 .pg-header{text-align:center;max-width:540px;margin:0 auto;padding:0 24px 48px}
 .pg-header h2{color:#fff;margin-bottom:12px}
 .pg-header p{color:var(--muted)}
@@ -229,7 +228,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    TESTIMONIALS
 ══════════════════════════════════════════ */
-#reviews{background:var(--bg1);border-top:1px solid var(--border);position:relative;z-index:10}
+#reviews{background:var(--bg1);border-top:1px solid var(--border);position:relative;z-index:2}
 .reviews-header{text-align:center;max-width:500px;margin:0 auto 52px}
 .reviews-header h2{color:#fff;margin-bottom:12px}
 .reviews-header p{color:var(--muted)}
@@ -246,7 +245,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    CTA BAND
 ══════════════════════════════════════════ */
-#cta-band{background:linear-gradient(110deg,var(--blue3) 0%,#0f2068 100%);padding:80px 0;text-align:center;position:relative;z-index:10;overflow:hidden}
+#cta-band{background:linear-gradient(110deg,var(--blue3) 0%,#0f2068 100%);padding:80px 0;text-align:center;position:relative;z-index:2;overflow:hidden}
 #cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 600px 300px at 50% 50%,rgba(56,189,248,.12) 0%,transparent 70%)}
 #cta-band .inner{position:relative;z-index:1}
 #cta-band h2{color:#fff;margin-bottom:14px}
@@ -256,7 +255,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    MAP
 ══════════════════════════════════════════ */
-#map{position:relative;height:400px;z-index:10}
+#map{position:relative;height:400px;z-index:2}
 #map iframe{width:100%;height:100%;border:none;display:block;filter:grayscale(20%) contrast(1.1)}
 .map-card{position:absolute;top:24px;left:24px;background:var(--bg0);border:1px solid var(--border);border-radius:var(--r);padding:18px 22px;z-index:2;max-width:240px;box-shadow:var(--sh)}
 .map-card h4{color:#fff;font-size:.95rem;margin-bottom:6px}
@@ -266,7 +265,7 @@ p{line-height:1.72;color:var(--text)}
 /* ══════════════════════════════════════════
    FOOTER
 ══════════════════════════════════════════ */
-footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 28px;position:relative;z-index:10}
+footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 28px;position:relative;z-index:2}
 .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px}
 .footer-brand p{font-size:.85rem;color:var(--muted);line-height:1.7;margin-top:14px;max-width:270px}
 .footer-col h5{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:18px}
@@ -309,12 +308,17 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
   .nav-top{padding:12px 20px}
 }
 @media(min-width:961px){.hamburger{display:none}.nav-contact,.nav-bottom{display:flex}}
+
+#app{position:absolute;inset:0;z-index:1;pointer-events:auto;overflow:hidden}
+.info{position:absolute;bottom:80px;right:28px;z-index:3;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);pointer-events:none}
+
+.footer-credit{display:flex;align-items:center;gap:6px;color:var(--dim);font-size:.78rem}
 </style>
 </head>
 <body>
 
 <!-- CALL FLOAT -->
-<a href="tel:+16615550100" class="call-float" aria-label="Call us">📞</a>
+<a href="tel:+16618086779" class="call-float" aria-label="Call us">📞</a>
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
@@ -341,7 +345,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
     </a>
     <div class="nav-contact">
       <div class="nav-schedule">Schedule Your Appointment!</div>
-      <a href="tel:+16615550100" class="nav-bigphone"><span class="ph-icon">📞</span>(661) 555-0100</a>
+      <a href="tel:+16618086779" class="nav-bigphone"><span class="ph-icon">📞</span>(661) 808-6779</a>
       <div class="nav-socials">
         <a href="#" class="nav-social" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
         <a href="https://www.instagram.com/kesslerspressurewashing" target="_blank" class="nav-social" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -370,9 +374,9 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
 
 <!-- ════════════ HERO ════════════ -->
 <section id="hero">
-  <div class="hero-bg">
-    <img src="hero-bg.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&cs=tinysrgb&w=1800'" alt="Pressure washing hero"/>
-  </div>
+  <div class="hero-bg"></div>
+  <div id="app"></div>
+  <div class="info">drag to interact &middot; click to spawn</div>
   <div class="container hero-content">
     <div class="hero-badge"><span class="dot"></span>Bakersfield, California</div>
     <h1 class="hero-headline">
@@ -398,7 +402,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
 <div id="svc-strip">
 
   <a href="mobile-wash.html" class="svc-panel">
-    <div class="svc-panel-bg" style="background-image:url('images/header-car-wash-1920x930.jpg')"></div>
+    <div class="svc-panel-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85')"></div>
     <div class="svc-panel-overlay"></div>
     <div class="svc-panel-content">
       <div class="svc-panel-title">Mobile Car Wash</div>
@@ -407,7 +411,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
   </a>
 
   <a href="home-washing.html" class="svc-panel">
-    <div class="svc-panel-bg" style="background-image:url('images/home-pro-painting-power-washing-header.webp')"></div>
+    <div class="svc-panel-bg" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=85')"></div>
     <div class="svc-panel-overlay"></div>
     <div class="svc-panel-content">
       <div class="svc-panel-title">Home Pressure Washing</div>
@@ -416,7 +420,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
   </a>
 
   <a href="home-washing.html" class="svc-panel">
-    <div class="svc-panel-bg" style="background-image:url('images/driveway-pressure-cleaning.webp')"></div>
+    <div class="svc-panel-bg" style="background-image:url('https://images.unsplash.com/photo-1622739020854-b96a8e649e2c?w=900&q=85')"></div>
     <div class="svc-panel-overlay"></div>
     <div class="svc-panel-content">
       <div class="svc-panel-title">Driveway &amp; Concrete</div>
@@ -449,7 +453,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
     <div class="services-grid">
       <div class="svc-card fu d1">
         <div class="svc-img">
-          <img src="images/CW148_High_Pressure_Car_Wash_Machine_A_Guide_to_Features_Types_and_Pro_Tips_1900x.jpg" alt="Mobile car wash Bakersfield" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Mobile car wash Bakersfield" loading="lazy"/>
           <div class="svc-img-overlay"></div>
         </div>
         <div class="svc-body">
@@ -466,7 +470,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
       </div>
       <div class="svc-card fu d2">
         <div class="svc-img">
-          <img src="images/Benefits-of-power-washing-1024x537.jpg" alt="Home pressure washing Bakersfield" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80" alt="Home pressure washing Bakersfield" loading="lazy"/>
           <div class="svc-img-overlay"></div>
         </div>
         <div class="svc-body">
@@ -483,7 +487,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
       </div>
       <div class="svc-card fu d3">
         <div class="svc-img">
-          <img src="images/HOME-concrete-cleaning2.jpg" alt="Driveway cleaning Bakersfield" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1622739020854-b96a8e649e2c?w=700&q=80" alt="Driveway cleaning Bakersfield" loading="lazy"/>
           <div class="svc-img-overlay"></div>
         </div>
         <div class="svc-body">
@@ -505,7 +509,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
 <!-- ════════════ WHAT'S INCLUDED CTA ════════════ -->
 <section id="included">
   <div class="included-img">
-    <img src="images/Twisted-Nozzle-Pressure-Washing-Contact-Us-3.jpg" alt="Professional car detailing Bakersfield" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=900&q=85" alt="Professional car detailing Bakersfield" loading="lazy"/>
   </div>
   <div class="included-content">
     <div class="included-content-bg"></div>
@@ -541,14 +545,14 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
     <p>A look at some of our recent work across Bakersfield — every job done with care.</p>
   </div>
   <div class="pg-grid">
-    <div class="pg-item fu d1"><img src="images/pressure-washers-car-cleaning-624x416.jpg" alt="Car wash result" loading="lazy"/><div class="pg-overlay"><span>Mobile Wash</span></div></div>
-    <div class="pg-item fu d2"><img src="images/lbl-pressure-washing-02.jpg" alt="Pressure washing" loading="lazy"/><div class="pg-overlay"><span>Pressure Wash</span></div></div>
-    <div class="pg-item fu d3"><img src="images/Concrete-cleaning-professionals-pressure-washing-driveway-in-Melbourne-home-r7fs5ca24jt02tide06vde1aoe8d0zcw0qprxxae14.webp" alt="Driveway cleaning" loading="lazy"/><div class="pg-overlay"><span>Driveway Clean</span></div></div>
-    <div class="pg-item fu d4"><img src="images/pressure-washing-service-company-lynchburg-va-6.jpg" alt="Home washing" loading="lazy"/><div class="pg-overlay"><span>Home Wash</span></div></div>
-    <div class="pg-item fu d1"><img src="images/pngtree-an-individual-is-washing-the-car-with-a-strong-stream-of-picture-image_15942561.jpg" alt="RV wash" loading="lazy"/><div class="pg-overlay"><span>RV Detail</span></div></div>
-    <div class="pg-item fu d2"><img src="images/concrete-sealing-spray-driveway.webp" alt="Sidewalk cleaning" loading="lazy"/><div class="pg-overlay"><span>Sidewalk Clean</span></div></div>
-    <div class="pg-item fu d3"><img src="images/21-11-2024-07-48-02_638677900836157890-1200x480.webp" alt="Exterior cleaning" loading="lazy"/><div class="pg-overlay"><span>Exterior Wash</span></div></div>
-    <div class="pg-item fu d4"><img src="images/is-it-safe-to-pressure-wash-a-car-lead-scaled.jpg" alt="Professional clean" loading="lazy"/><div class="pg-overlay"><span>Professional Clean</span></div></div>
+    <div class="pg-item fu d1"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Car wash result" loading="lazy"/><div class="pg-overlay"><span>Mobile Wash</span></div></div>
+    <div class="pg-item fu d2"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Pressure washing" loading="lazy"/><div class="pg-overlay"><span>Pressure Wash</span></div></div>
+    <div class="pg-item fu d3"><img src="https://images.unsplash.com/photo-1622739020854-b96a8e649e2c?w=600&q=80" alt="Driveway cleaning" loading="lazy"/><div class="pg-overlay"><span>Driveway Clean</span></div></div>
+    <div class="pg-item fu d4"><img src="https://images.unsplash.com/photo-1527515637462-cff94ead201b?w=600&q=80" alt="Home washing" loading="lazy"/><div class="pg-overlay"><span>Home Wash</span></div></div>
+    <div class="pg-item fu d1"><img src="https://images.unsplash.com/photo-1605164599901-c6b25d3e0e31?w=600&q=80" alt="RV wash" loading="lazy"/><div class="pg-overlay"><span>RV Detail</span></div></div>
+    <div class="pg-item fu d2"><img src="https://images.unsplash.com/photo-1584267759512-c7eb4bf4a89a?w=600&q=80" alt="Sidewalk cleaning" loading="lazy"/><div class="pg-overlay"><span>Sidewalk Clean</span></div></div>
+    <div class="pg-item fu d3"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Exterior cleaning" loading="lazy"/><div class="pg-overlay"><span>Exterior Wash</span></div></div>
+    <div class="pg-item fu d4"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Professional clean" loading="lazy"/><div class="pg-overlay"><span>Professional Clean</span></div></div>
   </div>
 </section>
 
@@ -587,7 +591,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
     <p>Get your free quote today — usually answered within a few hours.</p>
     <div class="cta-btns">
       <a href="contact.html" class="btn btn-gold">📋 Get a Free Quote</a>
-      <a href="tel:+16615550100" class="btn btn-outline">📞 Call (661) 555-0100</a>
+      <a href="tel:+16618086779" class="btn btn-outline">📞 Call (661) 808-6779</a>
     </div>
   </div>
 </section>
@@ -626,15 +630,16 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="tel:+16615550100">📞 (661) 555-0100</a></li>
-          <li><a href="mailto:info@kesslerswash.com">✉️ info@kesslerswash.com</a></li>
+          <li><a href="tel:+16618086779">📞 (661) 808-6779</a></li>
+          <li><a href="mailto:kesslerdylan566@gmail.com">✉️ kesslerdylan566@gmail.com</a></li>
           <li><span style="color:var(--muted)">📍 Bakersfield, CA</span></li>
           <li><span style="color:var(--muted)">🕐 Mon–Sat 7am–6pm</span></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2024 Kesslers Pressure Wash · Bakersfield, California</span>
+            <div class="footer-bottom">
+      <span>© 2025 Kesslers Pressure Wash · Bakersfield, California</span>
+      <span class="footer-credit">Designed by&nbsp;<img src="akoni-logo.png" alt="Akoni Studio" height="30" style="vertical-align:middle;opacity:.92"/></span>
       <span><a href="index.html">Bakersfield pressure washing</a> · <a href="mobile-wash.html">mobile car wash Bakersfield</a></span>
     </div>
   </div>
@@ -645,21 +650,7 @@ function toggleMM(){document.getElementById('ham').classList.toggle('open');docu
 function closeMM(){document.getElementById('ham').classList.remove('open');document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
-
-// Navbar scrolls away when svc-strip pushes it off screen
-const navbar = document.getElementById('navbar');
-const svcStrip = document.getElementById('svc-strip');
-function updateNavbar() {
-  const navH = navbar.offsetHeight;
-  const stripTop = svcStrip.getBoundingClientRect().top;
-  if (stripTop < navH) {
-    const push = Math.min(navH, navH - stripTop);
-    navbar.style.transform = 'translateY(-' + push + 'px)';
-  } else {
-    navbar.style.transform = 'translateY(0)';
-  }
-}
-window.addEventListener('scroll', updateNavbar, {passive: true});
 </script>
+  <script src="main.js"></script>
 </body>
 </html>
