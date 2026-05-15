@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>About Us | Kesslers Pressure Wash — Bakersfield, CA</title>
-<meta name="description" content="Learn about Kesslers Pressure Wash — a family-owned mobile car wash and pressure washing company proudly serving Bakersfield and Kern County, CA."/>
+<title>Home Pressure Washing & Driveway Cleaning | Kesslers — Bakersfield, CA</title>
+<meta name="description" content="Professional home pressure washing and driveway cleaning in Bakersfield, CA. We clean siding, stucco, concrete, fences, and more. Free quotes — call today!"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -18,8 +18,7 @@ ul{list-style:none}
 :root{
   --bg0:#080b12;--bg1:#0d1117;--bg2:#111520;--bg3:#161b27;
   --border:rgba(255,255,255,.07);--blue:#2563eb;--blue2:#3b82f6;--blue3:#1d4ed8;
-  --gold:#3b82f6;--white:#ffffff;--text:rgba(255,255,255,.88);
-  --muted:rgba(255,255,255,.5);--dim:rgba(255,255,255,.25);
+  --gold:#3b82f6;--text:rgba(255,255,255,.88);--muted:rgba(255,255,255,.5);--dim:rgba(255,255,255,.25);
   --r:12px;--r2:20px;--tr:.32s cubic-bezier(.4,0,.2,1);
   --sh:0 4px 24px rgba(0,0,0,.5);--shb:0 8px 40px rgba(37,99,235,.3);
 }
@@ -34,14 +33,13 @@ p{line-height:1.72;color:var(--text)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:.92rem;font-weight:700;border:none;cursor:pointer;transition:transform var(--tr),box-shadow var(--tr),background var(--tr)}
 .btn:hover{transform:translateY(-2px)}
 .btn-blue{background:var(--blue);color:#fff;box-shadow:var(--shb)}
-.btn-blue:hover{background:var(--blue3);box-shadow:0 12px 40px rgba(37,99,235,.45)}
+.btn-blue:hover{background:var(--blue3)}
 .btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
 .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
 .btn-gold{background:#fff;color:var(--blue3);font-weight:800;box-shadow:0 4px 20px rgba(255,255,255,.2)}
 .btn-gold:hover{background:#f0f4ff}
 .call-float{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 20px rgba(37,99,235,.5);transition:transform var(--tr)}
 .call-float:hover{transform:scale(1.12)}
-/* NAV */
 #navbar{position:relative;z-index:900;background:rgba(8,11,18,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav-top{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 24px;border-bottom:1px solid rgba(255,255,255,.07)}
 .nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
@@ -74,63 +72,82 @@ p{line-height:1.72;color:var(--text)}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:1.6rem;font-weight:700;color:#fff}
 .mobile-menu .mm-sub a{font-size:1rem;color:var(--muted)}
-/* FADE */
 .fu{opacity:0;transform:translateY(36px);transition:opacity .65s ease,transform .65s ease}
 .fu.vis{opacity:1;transform:none}
 .fu.d1{transition-delay:.1s}.fu.d2{transition-delay:.2s}.fu.d3{transition-delay:.3s}.fu.d4{transition-delay:.4s}
 
-/* ── PAGE HERO ── */
-.page-hero{position:relative;padding:160px 0 80px;overflow:hidden;background:var(--bg0)}
-.page-hero-bg{position:absolute;inset:0;background:url('lbl-pressure-washing-02.jpg') center/cover no-repeat}
+/* PAGE HERO */
+.page-hero{position:relative;padding:160px 0 80px;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background:url('home-pro-painting-power-washing-header.webp') center/cover no-repeat}
 .page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,8,16,.97) 0%,rgba(6,8,16,.75) 60%,rgba(6,8,16,.4) 100%)}
 .page-hero-inner{position:relative;z-index:2;max-width:700px}
 .page-hero h1{color:#fff;margin-bottom:18px}
-.page-hero p{font-size:1.1rem;color:var(--muted);max-width:560px}
+.page-hero p{font-size:1.1rem;color:var(--muted);max-width:560px;margin-bottom:36px}
+.page-hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-trust{display:flex;align-items:center;gap:24px;padding:20px 0;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap;margin-top:36px}
+.hero-trust-item{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted)}
 
-/* ── ABOUT STORY ── */
-.about-story{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.about-story-img{position:relative;border-radius:var(--r2);overflow:hidden;aspect-ratio:4/5}
-.about-story-img img{width:100%;height:100%;object-fit:cover}
-.about-story-img-badge{position:absolute;bottom:24px;left:24px;background:var(--blue);color:#fff;border-radius:var(--r);padding:16px 20px;font-weight:700;font-size:.9rem;line-height:1.3}
-.about-story-img-badge span{display:block;font-size:2rem;font-weight:900;line-height:1}
-.about-story-text .eyebrow{display:inline-flex}
-.about-story-text h2{color:#fff;margin-bottom:20px}
-.about-story-text p{color:var(--muted);margin-bottom:18px;font-size:.95rem}
+/* SERVICES GRID */
+#services{background:var(--bg0)}
+.svc-header{text-align:center;max-width:580px;margin:0 auto 60px}
+.svc-header h2{color:#fff;margin-bottom:14px}
+.svc-header p{color:var(--muted)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)}
+.svc-card{background:var(--bg1);overflow:hidden;transition:background var(--tr)}
+.svc-card:hover{background:var(--bg2)}
+.svc-img{position:relative;overflow:hidden}
+.svc-img img{width:100%;height:240px;object-fit:cover;transition:transform .55s ease}
+.svc-card:hover .svc-img img{transform:scale(1.06)}
+.svc-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,11,18,.85) 0%,transparent 55%)}
+.svc-body{padding:28px 24px}
+.svc-body h3{color:#fff;margin-bottom:10px}
+.svc-body p{font-size:.88rem;color:var(--muted);margin-bottom:20px;line-height:1.65}
+.svc-list{display:flex;flex-direction:column;gap:7px;margin-bottom:22px}
+.svc-list li{display:flex;align-items:center;gap:8px;font-size:.83rem;color:var(--text)}
+.svc-list li::before{content:'→';color:var(--blue2);font-weight:700;flex-shrink:0}
 
-/* ── VALUES ── */
-#values{background:var(--bg1);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);margin-top:56px}
-.value-card{background:var(--bg1);padding:40px 32px;transition:background var(--tr)}
-.value-card:hover{background:var(--bg2)}
-.value-icon{font-size:2rem;margin-bottom:16px}
-.value-card h3{color:#fff;margin-bottom:12px}
-.value-card p{font-size:.88rem;color:var(--muted);line-height:1.65}
+/* SPLIT SECTION */
+.split-section{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+.split-img{position:relative;overflow:hidden}
+.split-img img{width:100%;height:100%;object-fit:cover;display:block}
+.split-content{background:var(--bg1);display:flex;align-items:center;padding:72px 60px;position:relative;overflow:hidden}
+.split-content-bg{position:absolute;inset:0;opacity:.05}
+.split-inner{position:relative;z-index:1}
+.split-inner h2{color:#fff;margin-bottom:18px}
+.split-inner>p{font-size:.92rem;color:var(--muted);line-height:1.75;margin-bottom:28px}
+.split-list{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+.split-list li{display:flex;align-items:flex-start;gap:12px;font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.5}
+.split-list li .arr{color:var(--blue2);font-weight:900;flex-shrink:0;margin-top:1px}
 
-/* ── TEAM ── */
-#team{background:var(--bg0)}
-.team-header{text-align:center;max-width:540px;margin:0 auto 56px}
-.team-header h2{color:#fff;margin-bottom:14px}
-.team-header p{color:var(--muted)}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.team-card{background:var(--bg1);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:transform var(--tr),border-color var(--tr)}
-.team-card:hover{transform:translateY(-4px);border-color:rgba(37,99,235,.35)}
-.team-card-img{height:280px;overflow:hidden;background:var(--bg3)}
-.team-card-img img{width:100%;height:100%;object-fit:cover}
-.team-card-body{padding:24px}
-.team-card-body h3{color:#fff;margin-bottom:6px}
-.team-role{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue2);margin-bottom:12px}
-.team-card-body p{font-size:.86rem;color:var(--muted);line-height:1.65}
+/* PHOTO GRID */
+#photo-grid{background:var(--bg0);padding-top:80px}
+.pg-header{text-align:center;max-width:540px;margin:0 auto;padding:0 24px 48px}
+.pg-header h2{color:#fff;margin-bottom:12px}
+.pg-header p{color:var(--muted)}
+.pg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.pg-item{position:relative;aspect-ratio:1;overflow:hidden;background:var(--bg3)}
+.pg-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease,filter .55s ease}
+.pg-item:hover img{transform:scale(1.09);filter:brightness(1.1)}
+.pg-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,8,16,.75) 0%,transparent 50%);opacity:0;transition:opacity var(--tr);display:flex;align-items:flex-end;padding:14px}
+.pg-item:hover .pg-overlay{opacity:1}
+.pg-overlay span{font-size:.76rem;font-weight:700;color:#fff;letter-spacing:.06em;text-transform:uppercase}
 
-/* ── SERVICE AREA ── */
-#service-area{background:var(--bg1);border-top:1px solid var(--border)}
-.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.area-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
-.area-tag{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:.85rem;font-weight:600;color:var(--text);display:flex;align-items:center;gap:8px}
-.area-tag::before{content:'📍';font-size:.8rem}
-.area-map{position:relative;border-radius:var(--r2);overflow:hidden;height:400px}
-.area-map iframe{width:100%;height:100%;border:none;filter:grayscale(20%) contrast(1.1)}
+/* REVIEWS */
+#reviews{background:var(--bg1);border-top:1px solid var(--border)}
+.reviews-header{text-align:center;max-width:500px;margin:0 auto 52px}
+.reviews-header h2{color:#fff;margin-bottom:12px}
+.reviews-header p{color:var(--muted)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:32px 26px;transition:border-color var(--tr),transform var(--tr)}
+.review-card:hover{border-color:rgba(37,99,235,.35);transform:translateY(-4px)}
+.review-stars{color:var(--gold);font-size:.95rem;letter-spacing:2px;margin-bottom:16px}
+.review-text{font-size:.9rem;color:var(--text);line-height:1.72;font-style:italic;margin-bottom:24px}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{width:42px;height:42px;border-radius:50%;background:var(--blue3);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;color:#fff;flex-shrink:0}
+.review-name{font-size:.88rem;font-weight:700;color:#fff}
+.review-loc{font-size:.75rem;color:var(--muted)}
 
-/* ── CTA BAND ── */
+/* CTA */
 #cta-band{background:linear-gradient(110deg,var(--blue3) 0%,#0f2068 100%);padding:80px 0;text-align:center;position:relative;overflow:hidden}
 #cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 600px 300px at 50% 50%,rgba(56,189,248,.12) 0%,transparent 70%)}
 #cta-band .inner{position:relative;z-index:1}
@@ -138,7 +155,6 @@ p{line-height:1.72;color:var(--text)}
 #cta-band p{color:rgba(255,255,255,.7);font-size:1.05rem;max-width:480px;margin:0 auto 36px}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
-/* FOOTER */
 footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 28px}
 .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px}
 .footer-brand p{font-size:.85rem;color:var(--muted);line-height:1.7;margin-top:14px;max-width:270px}
@@ -150,19 +166,23 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
 .footer-bottom a{color:var(--blue2)}
 
 @media(max-width:960px){
-  .about-story{grid-template-columns:1fr;gap:40px}
-  .values-grid{grid-template-columns:1fr}
-  .team-grid{grid-template-columns:1fr 1fr}
-  .area-grid{grid-template-columns:1fr;gap:40px}
+  .services-grid{grid-template-columns:1fr}
+  .split-section{grid-template-columns:1fr}
+  .split-img{height:340px}
+  .split-content{padding:52px 36px}
+  .reviews-grid{grid-template-columns:1fr 1fr}
+  .pg-grid{grid-template-columns:repeat(2,1fr)}
   .footer-top{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
   .section{padding:64px 0}
-  .team-grid{grid-template-columns:1fr}
-  .area-list{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
   .cta-btns{flex-direction:column;align-items:center}
+  .page-hero-btns{flex-direction:column}
+  .hero-trust{flex-direction:column;gap:12px}
+  .split-content{padding:40px 24px}
   .nav-contact,.nav-bottom,.nav-book{display:none}
   .hamburger{display:flex}
 }
@@ -207,16 +227,16 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
   <div class="nav-bottom">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active-page">About Us</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li class="has-dd">
-        <a href="#">Services ▾</a>
+        <a href="#" class="active-page">Services ▾</a>
         <ul class="dd-menu">
           <li><a href="mobile-wash.html">🚗 Mobile Car Wash</a></li>
           <li><a href="home-washing.html">🏠 Home Pressure Washing</a></li>
         </ul>
       </li>
       <li><a href="mobile-wash.html">Mobile Car Wash</a></li>
-      <li><a href="home-washing.html">Home Washing</a></li>
+      <li><a href="home-washing.html" class="active-page">Home Washing</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
     <a href="contact.html" class="btn btn-blue nav-book">Book Now</a>
@@ -228,92 +248,149 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
   <div class="page-hero-bg"></div>
   <div class="container">
     <div class="page-hero-inner fu">
-      <div class="eyebrow">Our Story</div>
-      <h1>A Family Built on<br/>Hard Work &amp; Clean Results</h1>
-      <p>Kesslers Pressure Wash was founded right here in Bakersfield — built from the ground up by people who believe great service means showing up, doing the job right, and leaving every surface spotless.</p>
+      <div class="eyebrow">Home Pressure Washing</div>
+      <h1>Restore Your Home's<br/>Exterior to Like-New.</h1>
+      <p>Years of dirt, mold, and grime don't stand a chance. From siding to driveways, we pressure wash every surface until it looks new again — right here in Bakersfield.</p>
+      <div class="page-hero-btns">
+        <a href="contact.html" class="btn btn-gold">Get a Free Quote →</a>
+        <a href="tel:+16618086779" class="btn btn-outline">📞 (661) 808-6779</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span>✅</span> Licensed &amp; Insured</div>
+        <div class="hero-trust-item"><span>⭐</span> 5-Star Rated</div>
+        <div class="hero-trust-item"><span>🏡</span> Family-Owned</div>
+        <div class="hero-trust-item"><span>💰</span> Free Quotes</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT STORY -->
-<section class="section" style="background:var(--bg0)">
+<!-- SERVICES -->
+<section id="services" class="section">
   <div class="container">
-    <div class="about-story">
-      <div class="about-story-img fu">
-        <img src="IMG_3517-scaled.jpg" alt="Kesslers Pressure Wash team" loading="lazy"/>
-        <div class="about-story-img-badge"><span>7+</span>Years Serving<br/>Bakersfield</div>
+    <div class="svc-header fu">
+      <div class="eyebrow">What We Clean</div>
+      <h2>Exterior Cleaning Services</h2>
+      <p>We handle every surface on your property — from the roof line to the driveway edge.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card fu d1">
+        <div class="svc-img">
+          <img src="lbl-pressure-washing-02.jpg" alt="Home pressure washing" loading="lazy"/>
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <h3>Home Exterior Washing</h3>
+          <p>Strip away years of dust, mold, and oxidation from your home's exterior surfaces for a dramatic refresh.</p>
+          <ul class="svc-list">
+            <li>Stucco &amp; Painted Siding</li>
+            <li>Brick &amp; Block Walls</li>
+            <li>Fences &amp; Gates</li>
+            <li>Garage Doors &amp; Eaves</li>
+          </ul>
+        </div>
       </div>
-      <div class="about-story-text fu d2">
-        <div class="eyebrow">Who We Are</div>
-        <h2>Bakersfield's Trusted Cleaning Crew</h2>
-        <p>What started as a one-truck operation has grown into Bakersfield's most trusted mobile car wash and pressure washing service. We're not a franchise — we're your neighbors, and we treat every property like it's our own.</p>
-        <p>Over the years we've washed thousands of vehicles, driveways, homes, and commercial properties across Kern County. Every job gets the same attention to detail, the same quality products, and the same commitment to leaving you completely satisfied.</p>
-        <p>When you book with Kesslers, you're not calling a call center — you're calling us directly. We answer, we show up, and we deliver.</p>
-        <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap">
-          <a href="contact.html" class="btn btn-blue">Get a Free Quote →</a>
-          <a href="mobile-wash.html" class="btn btn-outline">Our Services</a>
+      <div class="svc-card fu d2">
+        <div class="svc-img">
+          <img src="driveway-pressure-cleaning.webp" alt="Driveway cleaning" loading="lazy"/>
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <h3>Driveway &amp; Concrete</h3>
+          <p>Blast away oil stains, tire marks, and embedded grime from your driveway, walkways, and concrete surfaces.</p>
+          <ul class="svc-list">
+            <li>Driveways &amp; Garages</li>
+            <li>Sidewalks &amp; Walkways</li>
+            <li>Pool Decks &amp; Patios</li>
+            <li>Oil Stain Treatment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="svc-card fu d3">
+        <div class="svc-img">
+          <img src="concrete-sealing-spray-driveway.webp" alt="Deck cleaning" loading="lazy"/>
+          <div class="svc-img-overlay"></div>
+        </div>
+        <div class="svc-body">
+          <h3>Decks, Patios &amp; More</h3>
+          <p>Restore wood, composite, or concrete outdoor living spaces to a clean, safe, splinter-free surface.</p>
+          <ul class="svc-list">
+            <li>Wood &amp; Composite Decks</li>
+            <li>Covered Patios</li>
+            <li>Pool Surrounds</li>
+            <li>Outdoor Furniture Areas</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- VALUES -->
-<section id="values" class="section">
-  <div class="container">
-    <div class="fu" style="text-align:center;max-width:540px;margin:0 auto">
-      <div class="eyebrow">Why We're Different</div>
-      <h2 style="color:#fff;margin-bottom:14px">What Drives Everything We Do</h2>
-      <p style="color:var(--muted)">Three values that have been part of Kesslers from day one — and will stay that way.</p>
-    </div>
-    <div class="values-grid">
-      <div class="value-card fu d1">
-        <div class="value-icon">🤝</div>
-        <h3 style="color:#fff;margin-bottom:12px">Integrity First</h3>
-        <p>We give you honest quotes, show up when we say we will, and never cut corners. If we made a mistake, we make it right — no questions asked.</p>
-      </div>
-      <div class="value-card fu d2">
-        <div class="value-icon">💧</div>
-        <h3 style="color:#fff;margin-bottom:12px">Quality You Can See</h3>
-        <p>We use professional-grade equipment and cleaning agents that actually work. Every surface we touch gets the same meticulous treatment — from paint to concrete.</p>
-      </div>
-      <div class="value-card fu d3">
-        <div class="value-icon">🏡</div>
-        <h3 style="color:#fff;margin-bottom:12px">Community Roots</h3>
-        <p>Bakersfield is our home. We sponsor local events, hire locally, and reinvest back into the community that gave us our start. When you hire us, you keep dollars local.</p>
-      </div>
+<!-- SPLIT SECTION: WHY PRESSURE WASH -->
+<section class="split-section">
+  <div class="split-img">
+    <img src="Split_image_showing_a_dramatic_before-and-after_transformation_of_a_home_s_exterior._The_left_side_of_the_house_is_covered_in_dirt_grime_and_milde.webp" alt="Pressure washing results" loading="lazy"/>
+  </div>
+  <div class="split-content" style="background:var(--bg2)">
+    <div class="split-inner fu">
+      <div class="eyebrow">Why It Matters</div>
+      <h2>More Than Just Clean — It Protects Your Home</h2>
+      <p>Regular pressure washing isn't just about looks. Mold, mildew, algae, and dirt build-up can break down paint, stucco, and concrete over time — costing you in repairs. Annual cleaning extends the life of every surface it touches.</p>
+      <ul class="split-list">
+        <li><span class="arr">→</span> Removes mold &amp; mildew before it causes damage</li>
+        <li><span class="arr">→</span> Extends the lifespan of paint and sealant</li>
+        <li><span class="arr">→</span> Improves curb appeal and property value</li>
+        <li><span class="arr">→</span> Safer surfaces — removes slippery algae and moss</li>
+        <li><span class="arr">→</span> Prepares surfaces for repainting or resealing</li>
+        <li><span class="arr">→</span> Removes oil stains that standard hoses can't touch</li>
+      </ul>
+      <a href="contact.html" class="btn btn-blue">Schedule a Cleaning →</a>
     </div>
   </div>
 </section>
 
+<!-- PHOTO GRID -->
+<section id="photo-grid">
+  <div class="pg-header fu">
+    <div class="eyebrow">Our Work</div>
+    <h2>Real Results in Bakersfield</h2>
+    <p>A look at some of the home and driveway washing jobs we've completed recently.</p>
+  </div>
+  <div class="pg-grid">
+    <div class="pg-item fu d1"><img src="pressure-washing-service-company-lynchburg-va-6.jpg" alt="Home wash" loading="lazy"/><div class="pg-overlay"><span>Home Wash</span></div></div>
+    <div class="pg-item fu d2"><img src="Driveway-cleaning-Indianapolis-Indiana-2-940x450.jpg" alt="Driveway" loading="lazy"/><div class="pg-overlay"><span>Driveway</span></div></div>
+    <div class="pg-item fu d3"><img src="Concrete-Cleaning-Basics-with-Pressure-Washing.webp" alt="Sidewalk" loading="lazy"/><div class="pg-overlay"><span>Sidewalk</span></div></div>
+    <div class="pg-item fu d4"><img src="HOME-concrete-cleaning2.jpg" alt="Deck clean" loading="lazy"/><div class="pg-overlay"><span>Deck Clean</span></div></div>
+    <div class="pg-item fu d1"><img src="Benefits-of-power-washing-1024x537.jpg" alt="Exterior wash" loading="lazy"/><div class="pg-overlay"><span>Exterior</span></div></div>
+    <div class="pg-item fu d2"><img src="Pressure-Washing-Pricing-Guide-1-1-1024x683.webp" alt="Pro clean" loading="lazy"/><div class="pg-overlay"><span>Pro Clean</span></div></div>
+    <div class="pg-item fu d3"><img src="Concrete-cleaning-professionals-pressure-washing-driveway-in-Melbourne-home-r7fs5ca24jt02tide06vde1aoe8d0zcw0qprxxae14.webp" alt="After clean" loading="lazy"/><div class="pg-overlay"><span>After</span></div></div>
+    <div class="pg-item fu d4"><img src="21-11-2024-07-48-02_638677900836157890-1200x480.webp" alt="Result" loading="lazy"/><div class="pg-overlay"><span>Result</span></div></div>
+  </div>
+</section>
 
-
-<!-- SERVICE AREA -->
-<section id="service-area" class="section">
+<!-- REVIEWS -->
+<section id="reviews" class="section">
   <div class="container">
-    <div class="area-grid">
-      <div class="fu">
-        <div class="eyebrow">Where We Serve</div>
-        <h2 style="color:#fff;margin-bottom:14px">Covering All of Kern County</h2>
-        <p style="color:var(--muted);margin-bottom:8px">We proudly serve Bakersfield and surrounding communities throughout Kern County. If you're not sure if we cover your area, just give us a call — chances are we do.</p>
-        <div class="area-list">
-          <div class="area-tag">Bakersfield</div>
-          <div class="area-tag">Seven Oaks</div>
-          <div class="area-tag">Stockdale</div>
-          <div class="area-tag">Rosedale</div>
-          <div class="area-tag">Oleander</div>
-          <div class="area-tag">East Bakersfield</div>
-          <div class="area-tag">Oildale</div>
-          <div class="area-tag">Kern River</div>
-          <div class="area-tag">Tehachapi</div>
-          <div class="area-tag">Shafter</div>
-          <div class="area-tag">Delano</div>
-          <div class="area-tag">Wasco</div>
-        </div>
-        <p style="margin-top:20px;font-size:.85rem;color:var(--muted)">Don't see your city? <a href="contact.html" style="color:var(--blue2);font-weight:700">Contact us</a> and we'll let you know if we can make it work.</p>
+    <div class="reviews-header fu">
+      <div class="eyebrow">Reviews</div>
+      <h2>What Bakersfield Says</h2>
+      <p>Real feedback from homeowners across Bakersfield and Kern County.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fu d1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Had them pressure wash our driveway and the front of the house. Night and day difference! Incredibly affordable for the quality of work."</p>
+        <div class="review-author"><div class="review-avatar">SL</div><div><div class="review-name">Sandra L.</div><div class="review-loc">📍 Seven Oaks</div></div></div>
       </div>
-      <div class="area-map fu d2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106454.75097888927!2d-119.09790955000001!3d35.37329585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea6bc6d2e8aa15%3A0xa2de7d1bbb9da79d!2sBakersfield%2C%20CA!5e0!3m2!1sen!2sus!4v1712000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Service Area Map"></iframe>
+      <div class="review-card fu d2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Our driveway had years of oil stains — looked terrible. After one visit from Kesslers it looked almost new. Totally worth it."</p>
+        <div class="review-author"><div class="review-avatar">JB</div><div><div class="review-name">James B.</div><div class="review-loc">📍 Rosedale</div></div></div>
+      </div>
+      <div class="review-card fu d3">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"They washed our stucco, fence, and pool deck in one afternoon. Everything looked brand new. Booking them again before the holidays."</p>
+        <div class="review-author"><div class="review-avatar">RM</div><div><div class="review-name">Rachel M.</div><div class="review-loc">📍 Stockdale</div></div></div>
       </div>
     </div>
   </div>
@@ -322,8 +399,8 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 2
 <!-- CTA BAND -->
 <section id="cta-band">
   <div class="container inner fu">
-    <h2>Ready to Work With Us?</h2>
-    <p>Get your free quote today — usually answered within a few hours.</p>
+    <h2>Ready for a Cleaner Home?</h2>
+    <p>Get your free pressure washing quote today — fast response, no obligation.</p>
     <div class="cta-btns">
       <a href="contact.html" class="btn btn-gold">📋 Get a Free Quote</a>
       <a href="tel:+16618086779" class="btn btn-outline">📞 Call (661) 808-6779</a>

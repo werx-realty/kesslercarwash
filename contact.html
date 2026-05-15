@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us | Kesslers Pressure Wash — Bakersfield, CA</title>
+<meta name="description" content="Get a free quote from Kesslers Pressure Wash. Mobile car wash and pressure washing in Bakersfield, CA. Call (661) 808-6779 or fill out our quick form."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:#080b12;color:#fff;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+:root{
+  --bg0:#080b12;--bg1:#0d1117;--bg2:#111520;--bg3:#161b27;
+  --border:rgba(255,255,255,.07);--blue:#2563eb;--blue2:#3b82f6;--blue3:#1d4ed8;
+  --gold:#3b82f6;--text:rgba(255,255,255,.88);--muted:rgba(255,255,255,.5);--dim:rgba(255,255,255,.25);
+  --r:12px;--r2:20px;--tr:.32s cubic-bezier(.4,0,.2,1);
+  --sh:0 4px 24px rgba(0,0,0,.5);--shb:0 8px 40px rgba(37,99,235,.3);
+}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.section{padding:96px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue2);margin-bottom:14px}
+.eyebrow::before,.eyebrow::after{content:'';display:inline-block;width:28px;height:1px;background:var(--blue2);opacity:.6}
+h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:900;letter-spacing:-.025em;line-height:1.08}
+h2{font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+h3{font-size:1.25rem;font-weight:700}
+p{line-height:1.72;color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:.92rem;font-weight:700;border:none;cursor:pointer;transition:transform var(--tr),box-shadow var(--tr),background var(--tr)}
+.btn:hover{transform:translateY(-2px)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:var(--shb)}
+.btn-blue:hover{background:var(--blue3)}
+.btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.call-float{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 20px rgba(37,99,235,.5);transition:transform var(--tr)}
+.call-float:hover{transform:scale(1.12)}
+/* NAV */
+#navbar{position:relative;z-index:900;background:rgba(8,11,18,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-top{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 24px;border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo-icon{width:42px;height:42px;background:var(--blue);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.logo-text{font-size:1.12rem;font-weight:900;color:#fff;line-height:1.1}
+.logo-sub{font-size:.6rem;font-weight:500;color:rgba(255,255,255,.55);letter-spacing:.09em;text-transform:uppercase}
+.nav-contact{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.nav-schedule{font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.nav-bigphone{font-size:1.3rem;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1;transition:color var(--tr)}
+.nav-bigphone:hover{color:var(--blue2)}
+.nav-socials{display:flex;gap:10px;margin-top:2px}
+.nav-social{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#fff;transition:background var(--tr);border:1px solid rgba(255,255,255,.18)}
+.nav-social:hover{background:var(--blue)}
+.nav-bottom{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;flex:1;justify-content:center}
+.nav-links>li>a{display:block;padding:10px 15px;font-size:.74rem;font-weight:700;color:rgba(255,255,255,.75);letter-spacing:.1em;text-transform:uppercase;transition:color var(--tr)}
+.nav-links>li>a:hover,.nav-links>li>a.active-page{color:#fff}
+.has-dd{position:relative}
+.dd-menu{display:none;position:absolute;top:100%;left:0;min-width:210px;background:rgba(8,11,18,.95);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);z-index:100;backdrop-filter:blur(12px)}
+.has-dd:hover .dd-menu{display:block}
+.dd-menu a{display:block;padding:13px 20px;font-size:.82rem;font-weight:600;color:var(--muted);transition:background var(--tr),color var(--tr);text-transform:none;letter-spacing:0}
+.dd-menu a:hover{background:var(--bg3);color:#fff}
+.nav-book{padding:7px 20px!important;font-size:.74rem!important;font-weight:700;flex-shrink:0;margin-bottom:4px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:transform var(--tr),opacity var(--tr)}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--bg0);z-index:850;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:1.6rem;font-weight:700;color:#fff}
+.mobile-menu .mm-sub a{font-size:1rem;color:var(--muted)}
+.fu{opacity:0;transform:translateY(36px);transition:opacity .65s ease,transform .65s ease}
+.fu.vis{opacity:1;transform:none}
+.fu.d1{transition-delay:.1s}.fu.d2{transition-delay:.2s}.fu.d3{transition-delay:.3s}
+
+/* PAGE HERO */
+.page-hero{position:relative;padding:120px 0 60px;overflow:hidden;background:var(--bg0)}
+.page-hero-bg{position:absolute;inset:0;background:url('Twisted-Nozzle-Pressure-Washing-Contact-Us-3.jpg') center/cover no-repeat}
+.page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,8,16,.97) 0%,rgba(6,8,16,.75) 60%,rgba(6,8,16,.4) 100%)}
+.page-hero-inner{position:relative;z-index:2;text-align:center;max-width:640px;margin:0 auto}
+.page-hero h1{color:#fff;margin-bottom:16px}
+.page-hero p{font-size:1.05rem;color:var(--muted);max-width:520px;margin:0 auto}
+
+/* CONTACT LAYOUT */
+#contact-main{background:var(--bg0)}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:start}
+
+/* FORM */
+.contact-form-wrap{background:var(--bg1);border:1px solid var(--border);border-radius:var(--r2);padding:44px 40px}
+.contact-form-wrap h2{color:#fff;margin-bottom:6px;font-size:1.6rem}
+.contact-form-wrap>p{font-size:.88rem;color:var(--muted);margin-bottom:32px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.form-group label{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.form-group input,.form-group select,.form-group textarea{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;font-size:.9rem;color:#fff;font-family:'Inter',sans-serif;transition:border-color var(--tr),box-shadow var(--tr);outline:none;width:100%}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--dim)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue2);box-shadow:0 0 0 3px rgba(59,130,246,.15)}
+.form-group select option{background:var(--bg2);color:#fff}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-submit{width:100%;padding:15px;background:var(--blue);color:#fff;border:none;border-radius:50px;font-size:.95rem;font-weight:700;cursor:pointer;transition:background var(--tr),transform var(--tr),box-shadow var(--tr);box-shadow:var(--shb);margin-top:6px;letter-spacing:.03em}
+.form-submit:hover{background:var(--blue3);transform:translateY(-2px);box-shadow:0 10px 36px rgba(37,99,235,.45)}
+.form-note{font-size:.78rem;color:var(--dim);text-align:center;margin-top:14px}
+
+/* SUCCESS STATE */
+.form-success{display:none;text-align:center;padding:48px 20px}
+.form-success .check{font-size:3rem;margin-bottom:16px}
+.form-success h3{color:#fff;margin-bottom:10px}
+.form-success p{color:var(--muted);font-size:.9rem}
+
+/* CONTACT SIDEBAR */
+.contact-sidebar{display:flex;flex-direction:column;gap:20px}
+.contact-info-card{background:var(--bg1);border:1px solid var(--border);border-radius:var(--r2);padding:28px 26px}
+.contact-info-card h4{color:#fff;font-size:.9rem;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.contact-info-card h4 .ci-icon{font-size:1.2rem}
+.contact-info-item{display:flex;flex-direction:column;gap:2px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.contact-info-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ci-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.ci-value{font-size:.92rem;color:var(--text);font-weight:500}
+.ci-value a{color:var(--blue2);transition:color var(--tr)}
+.ci-value a:hover{color:#fff}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.hours-item{font-size:.83rem}
+.hours-day{color:var(--muted);font-size:.75rem}
+.hours-time{color:var(--text);font-weight:600}
+.hours-closed{color:rgba(255,255,255,.3)}
+.social-row{display:flex;gap:12px;margin-top:4px}
+.social-btn{display:flex;align-items:center;gap:8px;padding:9px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);font-size:.82rem;font-weight:600;color:var(--text);transition:background var(--tr),border-color var(--tr)}
+.social-btn:hover{background:var(--bg3);border-color:rgba(255,255,255,.2);color:#fff}
+
+/* MAP */
+#map{position:relative;height:420px;z-index:2;margin-top:60px}
+#map iframe{width:100%;height:100%;border:none;display:block;filter:grayscale(20%) contrast(1.1)}
+.map-card{position:absolute;top:24px;left:24px;background:var(--bg0);border:1px solid var(--border);border-radius:var(--r);padding:18px 22px;z-index:2;max-width:240px;box-shadow:var(--sh)}
+.map-card h4{color:#fff;font-size:.95rem;margin-bottom:6px}
+.map-card p{font-size:.8rem;color:var(--muted);margin-bottom:10px}
+.map-card a{font-size:.8rem;font-weight:700;color:var(--blue2)}
+
+/* TRUST STRIP */
+#trust{background:var(--blue3);padding:48px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust-item{text-align:center;padding:16px;border-right:1px solid rgba(255,255,255,.15)}
+.trust-item:last-child{border-right:none}
+.trust-icon{font-size:1.8rem;margin-bottom:8px}
+.trust-label{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+
+/* FOOTER */
+footer{background:var(--bg1);border-top:1px solid var(--border);padding:60px 0 28px}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand p{font-size:.85rem;color:var(--muted);line-height:1.7;margin-top:14px;max-width:270px}
+.footer-col h5{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:18px}
+.footer-col ul{display:flex;flex-direction:column;gap:10px}
+.footer-col ul a{font-size:.85rem;color:var(--muted);transition:color var(--tr)}
+.footer-col ul a:hover{color:#fff}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.78rem;color:var(--dim)}
+.footer-bottom a{color:var(--blue2)}
+
+@media(max-width:960px){
+  .contact-grid{grid-template-columns:1fr;gap:40px}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-item:nth-child(2){border-right:none}
+  .trust-item:nth-child(3){border-top:1px solid rgba(255,255,255,.15)}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .section{padding:64px 0}
+  .contact-form-wrap{padding:28px 20px}
+  .form-row{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .nav-contact,.nav-bottom,.nav-book{display:none}
+  .hamburger{display:flex}
+}
+@media(max-width:960px){.nav-contact{display:none}.nav-bottom{display:none}.hamburger{display:flex}.nav-top{padding:12px 20px}}
+@media(min-width:961px){.hamburger{display:none}.nav-contact,.nav-bottom{display:flex}}
+
+.footer-credit{display:flex;align-items:center;gap:6px;color:var(--dim);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<a href="tel:+16618086779" class="call-float" aria-label="Call us">📞</a>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMM()">Home</a>
+  <a href="about.html" onclick="closeMM()">About</a>
+  <div class="mm-sub" style="text-align:center">
+    <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Services</div>
+    <a href="mobile-wash.html" onclick="closeMM()" style="font-size:1rem;display:block;margin-bottom:10px">Mobile Car Wash</a>
+    <a href="home-washing.html" onclick="closeMM()" style="font-size:1rem;display:block">Home Washing</a>
+  </div>
+  <a href="contact.html" onclick="closeMM()">Contact</a>
+  <a href="contact.html" class="btn btn-blue" onclick="closeMM()">Book Now</a>
+</div>
+
+<nav id="navbar">
+  <div class="nav-top">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">💧</div>
+      <div><div class="logo-text">Kessler's</div><div class="logo-sub">Pressure Wash</div></div>
+    </a>
+    <div class="nav-contact">
+      <div class="nav-schedule">Schedule Your Appointment!</div>
+      <a href="tel:+16618086779" class="nav-bigphone">📞 (661) 808-6779</a>
+      <div class="nav-socials">
+        <a href="#" class="nav-social" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/kesslerspressurewashing" target="_blank" class="nav-social" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <button class="hamburger" id="ham" onclick="toggleMM()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-bottom">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="has-dd">
+        <a href="#">Services ▾</a>
+        <ul class="dd-menu">
+          <li><a href="mobile-wash.html">🚗 Mobile Car Wash</a></li>
+          <li><a href="home-washing.html">🏠 Home Pressure Washing</a></li>
+        </ul>
+      </li>
+      <li><a href="mobile-wash.html">Mobile Car Wash</a></li>
+      <li><a href="home-washing.html">Home Washing</a></li>
+      <li><a href="contact.html" class="active-page">Contact Us</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-blue nav-book">Book Now</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <div class="page-hero-inner fu">
+      <div class="eyebrow">Get in Touch</div>
+      <h1>Let's Get Your<br/>Quote Started</h1>
+      <p>Fill out the form below or give us a call. We typically respond within a few hours — Monday through Saturday.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div id="trust">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item fu"><div class="trust-icon">✅</div><div class="trust-label">Licensed &amp; Insured</div></div>
+      <div class="trust-item fu d1"><div class="trust-icon">⭐</div><div class="trust-label">5-Star Rated</div></div>
+      <div class="trust-item fu d2"><div class="trust-icon">👨‍👩‍👦</div><div class="trust-label">Family-Owned</div></div>
+      <div class="trust-item fu d3"><div class="trust-icon">💰</div><div class="trust-label">Free Quotes</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT MAIN -->
+<section id="contact-main" class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap fu">
+        <h2>Request a Free Quote</h2>
+        <p>Tell us about your project and we'll get back to you fast with pricing.</p>
+        <form id="quoteForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Anthony" required/>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Kessler" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(661) 000-0000" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option value="mobile-wash">Mobile Car Wash</option>
+              <option value="home-washing">Home Pressure Washing</option>
+              <option value="driveway">Driveway &amp; Concrete Cleaning</option>
+              <option value="rv">RV / Motorhome Wash</option>
+              <option value="fleet">Fleet / Commercial Vehicles</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address or Area</label>
+            <input type="text" id="address" name="address" placeholder="East Bakersfield, 93308…"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Details &amp; Anything Else We Should Know</label>
+            <textarea id="message" name="message" placeholder="Number of vehicles, property size, specific stains, preferred date, etc."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send My Quote Request →</button>
+          <p class="form-note">We typically respond within a few hours. No spam, ever.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="check">✅</div>
+          <h3>Quote Request Received!</h3>
+          <p>We'll be in touch within a few hours to discuss pricing and availability. If you need to reach us immediately, call <a href="tel:+16618086779" style="color:var(--blue2)">(661) 808-6779</a>.</p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+        <div class="contact-info-card fu d1">
+          <h4><span class="ci-icon">📞</span> Direct Contact</h4>
+          <div class="contact-info-item">
+            <div class="ci-label">Phone</div>
+            <div class="ci-value"><a href="tel:+16618086779">(661) 808-6779</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-label">Email</div>
+            <div class="ci-value"><a href="mailto:kesslerdylan566@gmail.com">kesslerdylan566@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-label">Location</div>
+            <div class="ci-value">Bakersfield, California</div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-label">Service Area</div>
+            <div class="ci-value">Bakersfield &amp; all of Kern County</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card fu d2">
+          <h4><span class="ci-icon">🕐</span> Hours of Operation</h4>
+          <div class="hours-grid">
+            <div class="hours-item"><div class="hours-day">Monday</div><div class="hours-time">7am – 6pm</div></div>
+            <div class="hours-item"><div class="hours-day">Tuesday</div><div class="hours-time">7am – 6pm</div></div>
+            <div class="hours-item"><div class="hours-day">Wednesday</div><div class="hours-time">7am – 6pm</div></div>
+            <div class="hours-item"><div class="hours-day">Thursday</div><div class="hours-time">7am – 6pm</div></div>
+            <div class="hours-item"><div class="hours-day">Friday</div><div class="hours-time">7am – 6pm</div></div>
+            <div class="hours-item"><div class="hours-day">Saturday</div><div class="hours-time">8am – 4pm</div></div>
+            <div class="hours-item"><div class="hours-day">Sunday</div><div class="hours-time hours-closed">Closed</div></div>
+          </div>
+        </div>
+
+        <div class="contact-info-card fu d3">
+          <h4><span class="ci-icon">📱</span> Follow Us</h4>
+          <p style="font-size:.84rem;color:var(--muted);margin-bottom:16px">See our latest work and customer results on social media.</p>
+          <div class="social-row">
+            <a href="#" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/kesslerspressurewashing" target="_blank" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div id="map">
+  <div class="map-card">
+    <h4>📍 Bakersfield, CA</h4>
+    <p>Serving all of Bakersfield and Kern County communities.</p>
+    <a href="https://maps.google.com/?q=Bakersfield,CA" target="_blank" rel="noopener">Get Directions →</a>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106454.75097888927!2d-119.09790955000001!3d35.37329585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea6bc6d2e8aa15%3A0xa2de7d1bbb9da79d!2sBakersfield%2C%20CA!5e0!3m2!1sen!2sus!4v1712000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bakersfield CA Map"></iframe>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">💧</div>
+          <div><div class="logo-text">Kesslers Pressure Wash</div><div class="logo-sub">Bakersfield, CA</div></div>
+        </a>
+        <p>Family-owned mobile car wash and pressure washing serving Bakersfield and Kern County. Licensed, insured, and 5-star rated.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mobile-wash.html">Mobile Car Wash</a></li>
+          <li><a href="home-washing.html">Home Washing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+16618086779">📞 (661) 808-6779</a></li>
+          <li><a href="mailto:kesslerdylan566@gmail.com">✉️ kesslerdylan566@gmail.com</a></li>
+          <li><span style="color:var(--muted)">📍 Bakersfield, CA</span></li>
+          <li><span style="color:var(--muted)">🕐 Mon–Sat 7am–6pm</span></li>
+        </ul>
+      </div>
+    </div>
+            <div class="footer-bottom">
+      <span>© 2025 Kesslers Pressure Wash · Bakersfield, California</span>
+      <span class="footer-credit">Designed by&nbsp;<img src="akoni-logo.png" alt="Akoni Studio" height="30" style="vertical-align:middle;opacity:.92"/></span>
+      <span><a href="index.html">Bakersfield pressure washing</a> · <a href="mobile-wash.html">mobile car wash Bakersfield</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMM(){document.getElementById('ham').classList.toggle('open');document.getElementById('mobileMenu').classList.toggle('open');document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('open')?'hidden':''}
+function closeMM(){document.getElementById('ham').classList.remove('open');document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+function submitForm(e){
+  e.preventDefault();
+  const f = document.getElementById('quoteForm');
+  const name    = f.querySelector('[name=name]')?.value    || f.querySelectorAll('input')[0]?.value || '';
+  const phone   = f.querySelector('[name=phone]')?.value   || f.querySelectorAll('input')[1]?.value || '';
+  const email   = f.querySelector('[name=email]')?.value   || f.querySelectorAll('input')[2]?.value || '';
+  const service = f.querySelector('[name=service],[name=svc]')?.value || '';
+  const message = f.querySelector('textarea')?.value || '';
+  const body = `Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AService: ${service}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+  window.location.href = `mailto:kesslerdylan566@gmail.com?subject=Quote Request from ${encodeURIComponent(name)}&body=${body}`;
+  setTimeout(()=>{
+    document.getElementById('quoteForm').style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  }, 400);
+}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
+document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
